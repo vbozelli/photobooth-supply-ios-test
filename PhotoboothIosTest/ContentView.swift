@@ -40,6 +40,7 @@ struct ContentView: View {
                                     Text(!capturedPhoto ? "Photo" : "Video Frame")
                                         .background(.white)
                                         .foregroundStyle(.black)
+                                        .padding(2)
 
                                     Button(action: captureImage) {
                                         Image(systemName: "camera")
