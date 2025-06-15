@@ -73,8 +73,6 @@ struct ContentView: View {
                         .buttonStyle(.borderedProminent)
                         .buttonBorderShape(.capsule)
                         .foregroundStyle(.black)
-                        .padding(.top, 8)
-                        
                 }
             }
             .environmentObject(cameraManager)
