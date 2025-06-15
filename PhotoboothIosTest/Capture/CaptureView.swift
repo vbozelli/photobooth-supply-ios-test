@@ -29,7 +29,7 @@ struct CaptureView: View {
             if showImage, let capturedImage = captureViewModel.capturedImage {
 
                 NavigationLink {
-                    PhotoFullscreen(image: capturedImage, title: title)
+                    PhotoFullscreenView(image: capturedImage, title: title)
                 } label: {
                     Image(uiImage: capturedImage)
                         .resizable()

@@ -1,5 +1,5 @@
 //
-//  PhotoFullscreen.swift
+//  PhotoFullscreenView.swift
 //  PhotoboothIosTest
 //
 //  Created by Victor Bozelli Alvarez on 15/06/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PhotoFullscreen: View {
+struct PhotoFullscreenView: View {
 
     //MARK: Variables
     var image: UIImage
