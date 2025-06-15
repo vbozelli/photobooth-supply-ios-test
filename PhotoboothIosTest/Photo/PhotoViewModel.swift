@@ -23,11 +23,8 @@ class PhotoViewModel: CaptureViewModel {
     
     //MARK: Methods
     override func captureImage() {
-        let settings = AVCapturePhotoSettings(format: [
-            AVVideoCodecKey: AVVideoCodecType.jpeg,
-            AVVideoCompressionPropertiesKey: [AVVideoQualityKey: 1]
-        ])
         let photoOutput = self.captureOutput as? AVCapturePhotoOutput
+        let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
     }
 }

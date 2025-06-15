@@ -27,18 +27,16 @@ struct CaptureView: View {
     var body: some View {
         VStack {
             if showImage, let capturedImage = captureViewModel.capturedImage {
-                
-                let image = Image(uiImage: capturedImage)
 
                 NavigationLink {
                     PhotoFullscreen(image: capturedImage, title: title)
                 } label: {
-                    image
+                    Image(uiImage: capturedImage)
                         .resizable()
                         .scaledToFit()
                 }
-                
-                ShareImage(image: image, label: title) {
+
+                ShareImageView(image: capturedImage, label: title) {
                     Label("Share \(title)", systemImage: "square.and.arrow.up.fill")
                         .foregroundStyle(.black)
                 }

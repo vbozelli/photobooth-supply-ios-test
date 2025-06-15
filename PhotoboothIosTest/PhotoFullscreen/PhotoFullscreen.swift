@@ -15,10 +15,7 @@ struct PhotoFullscreen: View {
 
     //MARK: View
     var body: some View {
-        
-        let image = Image(uiImage: image)
-
-        image
+        Image(uiImage: image)
             .resizable()
             .scaledToFit()
             .zoomable()
@@ -27,7 +24,7 @@ struct PhotoFullscreen: View {
             //Enable share image
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    ShareImage(image: image, label: "Photo") {
+                    ShareImageView(image: image, label: "Photo") {
                         Image(systemName: "square.and.arrow.up.fill")
                     }
                 }
